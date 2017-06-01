@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Khula|Lato|Titillium+Web:200" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function() {
+    $("input[type=checkbox]").click(function() {
+        $(this).closest('tr').toggleClass('yellow', $(this).is(':checked'));
+    });
+});
+
+</script>
+</head>
+<body>
+	<div class="container">
+	<header class="top">
+		<div class="leftside">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+		<div class="midside">
+			<div class="topname"><h1 class="top_title"><span class="doc">Docs</span></h1></div>
+			<div class="topblocks">
+				<div class="block_state"><h3 class="block_name first_block">Reports</h3></div>
+				<h3 class="block_name">Presentations</h3>
+				<h3 class="block_name">Pinboards</h3>
+				<h3 class="block_name">Tickets</h3>
+				<h3 class="block_name">Forms</h3>
+				<h3 class="block_name">Others</h3>
+			</div>
+		</div>
+		<div class="rightside"><i class="fa fa-plus" aria-hidden="true"></i></div>
+	</header>
+	<div class="main">
+		<div class="right_main">
+			<div class="top_right">
+				<div class="right_block"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+				<div class="right_block right_block1"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+				<div class="right_block"><i class="fa fa-database" aria-hidden="true"></i></div>
+				<div class="right_block"><i class="fa fa-cog" aria-hidden="true"></i></div>
+			</div>
+			<div class="bottom_right">
+				<div class="right_bottom_block"><i class="fa fa-window-restore" aria-hidden="true"></i></div>
+				<div class="right_bottom_block">
+					<img src="images/5.jpg" alt="" class="photo photo_user">
+					<div class="circle">3</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="main_main">
+			<div class="right_column">
+				<p class="line line1"><span class="black" >All</span></p>
+				<p class="line">Mines</p>
+				<p class="line">Shared</p>
+				<p class="line">Drafts</p>
+			</div>
+			<div class="left_column">
+				<div class="table_block">
+					<div class="table_header">
+						<h3 class="table_name black">23 reports</h3>
+						<div class="right_table">
+							<i class="fa fa-pencil black" aria-hidden="true"></i>
+							<i class="fa fa-share-square-o black" aria-hidden="true"></i>
+							<i class="fa fa-trash-o black" aria-hidden="true"></i>
+						</div>
+					</div>
+					<table class="table" cellspacing="0" cellpadding="0">
+						<tr class="tr1">
+							<th><input type="checkbox" ></th>
+							<th>NAME</th>
+							<th>DESCRIPTION</th>
+							<th class="th3">DATE CREATED</th>
+							<th></th>
+						</tr>
+						<tr class="tr">
+							<th><input type="checkbox" ></th>
+							<th class="black" >Last quarter revenue</th>
+							<th>Revenue for last quarter in state in America for years 2013, with...</th>
+							<th class="th3">6 minutes ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/1.jpeg" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox" name='chkOrgRow' ></th>
+							<th class="black">Expenses in 2013</th>
+							<th></th>
+							<th class="th3">2 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/1.jpeg" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox" ></th>
+							<th class="black">Accounting</th>
+							<th>Lorem ipsum dolor sit amet</th>
+							<th class="th3">5 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/2.jpeg" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox"></th>
+							<th class="black">Starbucks orders</th>
+							<th>Unde iusto ab quae, voluptatibus numquam eaque </th>
+							<th class="th3">7 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/3.png" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox" ></th>
+							<th class="black">East Coast customers in 2012</th>
+							<th></th>
+							<th class="th3">10 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/1.jpeg" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox" ></th>
+							<th class="black">Last quarter expenses</th>
+							<th></th>
+							<th class="th3">10 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/4.jpg" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox" ></th>
+							<th class="black">HR 2013 worksheet</th>
+							<th> Illo deserunt, blanditiis eveniet.</th>
+							<th class="th3">11 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/5.jpg" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox" ></th>
+							<th class="black">Salaries last quearter</th>
+							<th>Lorem ipsum dolor sit amet</th>
+							<th class="th3">11 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/6.jpeg" alt="" class="photo"></th>
+						</tr>
+							<tr class="tr">
+							<th><input type="checkbox" ></th>
+							<th class="black">Customer order in 2013</th>
+							<th></th>
+							<th class="th3">12 hours ago<i class="fa fa-clock-o" aria-hidden="true"></i></th>
+							<th><img src="images/7.jpeg" alt="" class="photo"></th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>	
+</body>
+</html>
